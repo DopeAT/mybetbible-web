@@ -1,0 +1,33 @@
+// Bookies Color
+$bookies: (
+  'bet365': #126e51,
+  'betway': #000000,
+  'novibet': #303540,
+  '888sport': #f7661d,
+  'coral': #074d8d,
+  'betfair': #f7b234,
+  'gentingbet': #e30e14,
+  'william-hill': #00143c,
+  'tonybet': #4d4d4d,
+  'betvictor': #44b6e5,
+  'bwin': #44b6e5,
+  'unibet': #34a338,
+  'ladbrokes': #f01e28,
+  'paddy-power': #014833,
+  'sportingbet': #0988d1,
+  'betfred': #004990,
+  '10bet': #4e454a,
+  'tipbet': #cc0001,
+  'fansbet': #57a348
+);
+
+@each $key, $value in $bookies {
+  .bg-#{$key} {
+    background: #{$value} !important;
+    border-color: #{$value} !important;
+  }
+
+  .color-#{$key} {
+    color: #{$value} !important;
+  }
+}
